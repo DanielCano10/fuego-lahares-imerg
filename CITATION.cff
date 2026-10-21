@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Si usas este código o estos datos, cítalos así."
+title: "Uso de modelos de clasificación supervisada para estimar la ocurrencia de lahares secundarios en el Volcán de Fuego, Guatemala, a partir de precipitación acumulada estimada por GPM/IMERG"
+type: software
+authors:
+  - family-names: "Cano Pérez"
+    given-names: "Daniel Alexander"
+    affiliation: "Escuela de Ciencias y Sistemas, Facultad de Ingeniería, Universidad de San Carlos de Guatemala"
+version: "1.0.0"
+#date-released: "2026-10-01"
+license: MIT
+repository-code: "https://github.com/DanielCano10/fuego-lahares-imerg"
+keywords: [lahares, "Volcán de Fuego", Guatemala, "GPM IMERG", "aprendizaje automático", "clasificación supervisada"]
