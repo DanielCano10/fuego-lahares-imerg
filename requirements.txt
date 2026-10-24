@@ -1,10 +1,10 @@
-# Estas son las versiones exactas con las que se obtuvieron los resultados de la tesis (Python 3.10.7, Windows).
-# Aclaracion antes de instalar esto requerimientos:
-# Con otras versiones el bosque aleatorio puede elegir otros hiperparámetros y dar métricas un poco distintas, a las presentadas en la tesis
-pandas==1.5.2
-numpy==1.24.1
-scikit-learn==1.2.0
-matplotlib==3.6.2
-joblib==1.2.0
+# Versiones exactas con las que se obtuvieron los resultados de la tesis (Python 3.10.7, Windows 10).
+# Nota:
+# Con otras versiones el bosque aleatorio puede elegir otros hiperparámetros y dar métricas un poco distintas.
+pandas==2.3.3
+numpy==2.2.6
+scikit-learn==1.7.2
+matplotlib==3.10.9
+joblib==1.6.0
 jupyterlab>=3.5
 pytest>=7

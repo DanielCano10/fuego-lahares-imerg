@@ -1,0 +1,148 @@
+{
+  "descripcion": "Modelos de la tesis: lahares secundarios del Volcán de Fuego con IMERG diario (celda -90.95, 14.45, -90.85, 14.55)",
+  "versiones": {
+    "python": "3.10.7",
+    "scikit-learn": "1.7.2",
+    "pandas": "2.3.3",
+    "numpy": "2.2.6"
+  },
+  "modelo_elegido": "bosque_aleatorio",
+  "ecuacion_regresion_logistica": {
+    "intercepto": -1.2884320728286212,
+    "coeficientes": {
+      "lluvia_mm": 0.057914345346075015,
+      "acum_2d": 0.016179085946616257,
+      "acum_3d": -0.0020803734290327155,
+      "acum_5d": 0.006463390285693898,
+      "acum_7d": 0.009929992094925262,
+      "acum_14d": 0.0004334784692199393,
+      "acum_30d": 0.000323974831441714,
+      "max_diaria_7d": -0.013918278758079406,
+      "lluvia_ayer": -0.012921423367614213,
+      "dias_secos_previos": -0.21653502020339666,
+      "api_k09": -0.0003568925078876423,
+      "mes_sin": -0.4603113050770526,
+      "mes_cos": -0.7595536990160656
+    },
+    "formula": "p = 1 / (1 + exp(-(intercepto + suma(coeficiente_i * variable_i))))"
+  },
+  "modelos": {
+    "regresion_logistica": {
+      "hiperparametros": {
+        "logisticregression__C": 0.1
+      },
+      "umbral": 0.48386521571872076,
+      "prueba": {
+        "n": 379,
+        "con_lahar": 89,
+        "azar": 0.235,
+        "pr_auc": 0.508,
+        "roc_auc": 0.819,
+        "umbral": 0.484,
+        "sensibilidad": 0.843,
+        "especificidad": 0.662,
+        "precision": 0.434,
+        "f2": 0.709,
+        "VP": 75,
+        "FP": 98,
+        "FN": 14,
+        "VN": 192
+      },
+      "operativa_2026": {
+        "n": 156,
+        "con_lahar": 32,
+        "azar": 0.205,
+        "pr_auc": 0.724,
+        "roc_auc": 0.885,
+        "umbral": 0.484,
+        "sensibilidad": 0.75,
+        "especificidad": 0.782,
+        "precision": 0.471,
+        "f2": 0.67,
+        "VP": 24,
+        "FP": 27,
+        "FN": 8,
+        "VN": 97
+      }
+    },
+    "bosque_aleatorio": {
+      "hiperparametros": {
+        "max_depth": 8,
+        "min_samples_leaf": 20,
+        "n_estimators": 300
+      },
+      "umbral": 0.46828610475223836,
+      "prueba": {
+        "n": 379,
+        "con_lahar": 89,
+        "azar": 0.235,
+        "pr_auc": 0.529,
+        "roc_auc": 0.833,
+        "umbral": 0.468,
+        "sensibilidad": 0.82,
+        "especificidad": 0.734,
+        "precision": 0.487,
+        "f2": 0.721,
+        "VP": 73,
+        "FP": 77,
+        "FN": 16,
+        "VN": 213
+      },
+      "operativa_2026": {
+        "n": 156,
+        "con_lahar": 32,
+        "azar": 0.205,
+        "pr_auc": 0.762,
+        "roc_auc": 0.903,
+        "umbral": 0.468,
+        "sensibilidad": 0.75,
+        "especificidad": 0.823,
+        "precision": 0.522,
+        "f2": 0.69,
+        "VP": 24,
+        "FP": 22,
+        "FN": 8,
+        "VN": 102
+      }
+    },
+    "svm_rbf": {
+      "hiperparametros": {
+        "svc__C": 1,
+        "svc__gamma": 0.01
+      },
+      "umbral": 0.1541880558560327,
+      "prueba": {
+        "n": 379,
+        "con_lahar": 89,
+        "azar": 0.235,
+        "pr_auc": 0.49,
+        "roc_auc": 0.823,
+        "umbral": 0.154,
+        "sensibilidad": 0.865,
+        "especificidad": 0.676,
+        "precision": 0.45,
+        "f2": 0.731,
+        "VP": 77,
+        "FP": 94,
+        "FN": 12,
+        "VN": 196
+      },
+      "operativa_2026": {
+        "n": 156,
+        "con_lahar": 32,
+        "azar": 0.205,
+        "pr_auc": 0.727,
+        "roc_auc": 0.897,
+        "umbral": 0.154,
+        "sensibilidad": 0.781,
+        "especificidad": 0.815,
+        "precision": 0.521,
+        "f2": 0.71,
+        "VP": 25,
+        "FP": 23,
+        "FN": 7,
+        "VN": 101
+      }
+    }
+  }
+}

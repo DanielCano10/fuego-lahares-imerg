@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lahares-fuego"
+version = "1.0.0"
+description = "Probabilidad diaria de lahares secundarios en el Volcán de Fuego (Guatemala) a partir de lluvia GPM/IMERG"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Daniel Alexander Cano Pérez"}]
+requires-python = ">=3.9"
+# Rangos amplios para instalarlo en cualquier computadora; las versiones exactas de la tesis están en requirements.txt
+dependencies = ["pandas>=1.5", "numpy>=1.24", "scikit-learn>=1.2", "joblib>=1.2"]
+keywords = ["lahares", "Volcán de Fuego", "Guatemala", "GPM IMERG", "aprendizaje automático"]
+
+[project.optional-dependencies]
+notebook = ["matplotlib>=3.6", "jupyterlab>=3.5"]
+
+[project.urls]
+Repositorio = "https://github.com/DanielCano10/fuego-lahares-imerg"
+
+[project.scripts]
+lahares-fuego = "lahares_fuego.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+lahares_fuego = ["datos/*.csv", "datos/*.json"]
