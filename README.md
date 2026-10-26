@@ -106,7 +106,7 @@ El notebook hace todo el experimento paso por paso, genera las tablas y figuras 
 
 ## Datos y licencias
 
-El código tiene licencia MIT. Los datos derivados se publican bajo CC BY 4.0, y los de terceros conservan las condiciones de su fuente; el detalle está en `data/LEEME.md`. Los boletines del INSIVUMEH se obtuvieron por la Ley de Acceso a la Información Pública (resolución UIP-INSIVUMEH-2026-9-561); sus PDF originales no se incluyen.
+El código tiene licencia MIT. Los datos derivados se publican bajo CC BY 4.0, y los de terceros conservan las condiciones de su fuente; el detalle está en `data/README.md`. Los boletines del INSIVUMEH se obtuvieron por la Ley de Acceso a la Información Pública (resolución UIP-INSIVUMEH-2026-9-561); sus PDF originales no se incluyen.
 
 ## Cita
 
